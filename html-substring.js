@@ -67,6 +67,6 @@ function html_substr(src, length, suffix){
     if(suffix === false) return str;
     return str + ((typeof suffix == "undefined" || suffix === true) ? "..." : suffix);
 }
-if (typeof module !== 'undefined' && module.exports) {
+if (module !== null && typeof module === 'object' && module.exports) {
     module.exports = html_substr;
 }
